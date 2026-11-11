@@ -1,0 +1,260 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex">
+<title>Gusta</title>
+<meta name="description" content="Gusta. New York DJ and producer: house grooves, trance lift. Music, records and contact.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Gusta">
+<meta property="og:description" content="New York DJ and producer: house grooves, trance lift.">
+<meta property="og:image" content="https://samsegan.github.io/gusta-site/img/share.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#070708">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23e4e203'/%3E%3Cpath d='M22.6 12.2c-.9-2.3-3-3.7-5.9-3.7-4.1 0-6.9 3-6.9 7.5s2.8 7.5 6.8 7.5c3.7 0 6.2-2.4 6.3-6.3v-1.800h-6.600v2.600h3.300c-.3 1.600-1.400 2.500-3 2.500-2.200 0-3.500-1.700-3.500-4.500s1.400-4.500 3.500-4.500c1.400 0 2.400.6 2.900 1.800z' fill='%23070708'/%3E%3C/svg%3E">
+<link rel="preload" href="fonts/familjen-grotesk-400-700.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<a class="skip" href="#about">Skip to the page</a>
+
+<!-- film grain over everything (wide screens: fixed; phones: see styles) -->
+<div id="grain" aria-hidden="true"></div>
+<svg id="filters" aria-hidden="true" width="0" height="0"><defs></defs></svg>
+
+<!-- corners of the screen, wide screens -->
+<nav id="nav" aria-label="Sections">
+  <a class="nav-name" href="#top">Gusta</a>
+  <div class="nav-right">
+    <a class="nav-contact" href="#contact" data-contact>Contact</a>
+    <div class="nav-items">
+      <a href="#top">Home</a>
+      <a href="#about">About</a>
+      <a href="#records">Records</a>
+      <a href="#live">Live</a>
+    </div>
+  </div>
+</nav>
+<div id="foot" aria-label="Elsewhere">
+  <div class="foot-left">
+    <a href="https://soundcloud.com/1gusta" target="_blank" rel="noopener">SoundCloud</a>
+    <a href="https://open.spotify.com/artist/1fNsy2CqJXAA2kA0dIPGFS" target="_blank" rel="noopener">Spotify</a>
+    <a href="https://www.instagram.com/_gustaaaaaaaaaaaaaa/" target="_blank" rel="noopener">Instagram</a>
+    <a href="https://www.tiktok.com/@1gustamusic" target="_blank" rel="noopener">TikTok</a>
+  </div>
+  <a class="foot-right" href="#about" id="scroll-hint">Scroll</a>
+</div>
+
+<!-- bottom bar, phones -->
+<nav id="bar" aria-label="Sections">
+  <div class="bar-line"><span id="bar-fill"></span></div>
+  <div class="bar-row">
+    <button type="button" id="bar-prev" aria-label="Previous section">(</button>
+    <span id="bar-label" aria-live="polite">Home</span>
+    <button type="button" id="bar-next" aria-label="Next section">)</button>
+  </div>
+</nav>
+
+<!-- contact, over the whole screen -->
+<div id="contact" role="dialog" aria-modal="true" aria-label="Contact" tabindex="-1" hidden>
+  <div class="contact-bg" aria-hidden="true"><img src="img/contact.jpg" alt="" width="900" height="675" decoding="async"></div>
+  <div class="contact-nav">
+    <a href="#top" data-close>Gusta</a>
+    <button type="button" id="contact-close" data-close>Close</button>
+  </div>
+  <div class="contact-center">
+    <button type="button" class="h1 contact-mail" id="contact-mail" data-split="chars" aria-label="Copy the address anson@notoriously-good.com"><span class="line">anson@</span><span class="line">notoriously-good.com</span></button>
+    <p class="h1 contact-copied" id="contact-copied" aria-hidden="true">Copied to clipboard</p>
+  </div>
+  <p class="h3 contact-sub"><span>Management</span><span>Bookings</span><span>Collaborations</span></p>
+  <div class="contact-foot">
+    <div class="foot-left">
+      <a href="mailto:anson@notoriously-good.com">Open in mail</a>
+      <a href="https://soundcloud.com/1gusta" target="_blank" rel="noopener">SoundCloud</a>
+      <a href="https://www.instagram.com/_gustaaaaaaaaaaaaaa/" target="_blank" rel="noopener">Instagram</a>
+    </div>
+    <span class="contact-hint" id="contact-hint">Click the address to copy it</span>
+  </div>
+</div>
+
+<main id="main">
+
+  <!-- landing -->
+  <header id="top" class="hero" data-name="Home">
+    <picture>
+      <source srcset="img/hero-m.jpg" media="(max-width: 1024px) and (orientation: portrait)">
+      <img class="hero-img" src="img/hero.jpg" alt="Gusta at a gas station at night, hood up, one hand over his face" width="1920" height="1443" fetchpriority="high">
+    </picture>
+    <div class="hero-top">
+      <div class="hero-social">
+        <a href="https://soundcloud.com/1gusta" target="_blank" rel="noopener">SoundCloud</a>
+        <a href="https://open.spotify.com/artist/1fNsy2CqJXAA2kA0dIPGFS" target="_blank" rel="noopener">Spotify</a>
+        <a href="https://www.instagram.com/_gustaaaaaaaaaaaaaa/" target="_blank" rel="noopener">Instagram</a>
+        <a href="https://www.tiktok.com/@1gustamusic" target="_blank" rel="noopener">TikTok</a>
+      </div>
+      <a href="#contact" data-contact>Contact</a>
+    </div>
+    <h1 class="h1 hero-title" data-split="groups" aria-label="Gusta"><span class="grp">Gu</span><span class="grp">st</span><span class="grp">a</span></h1>
+    <p class="h3 hero-sub"><span>New York</span><span>House</span><span>Trance</span></p>
+    <a class="hero-new" href="#falling-for-you"><span>Out now</span><span>Falling For You</span></a>
+  </header>
+
+  <!-- about -->
+  <section id="about" class="panel pa" data-name="About">
+    <div class="bg" data-speed="-60"><img src="img/portrait-close.jpg" alt="" width="1600" height="902" loading="lazy" decoding="async"></div>
+    <h2 class="h1 title" data-split="lines" aria-label="Synth wizard"><span class="line">Synth</span><span class="line">Wizard</span></h2>
+    <div class="info">
+      <div class="h3 rows">
+        <div class="row"><span>DJ</span><span>(&nbsp;&nbsp;&nbsp;NYC&nbsp;&nbsp;&nbsp;)</span></div>
+        <div class="row"><span>Producer</span></div>
+        <div class="row"><span>Certified</span></div>
+      </div>
+      <p class="blurb">Gusta is a New York DJ and producer working where house grooves meet trance lift: high tempos, ethereal chords, harder drums. His records are out on IN&nbsp;/&nbsp;ROTATION, Another World, NG&nbsp;Records and Garage Shared, and the edits live on SoundCloud, where a DM to K.ONE turned into a scene of their own.</p>
+    </div>
+    <figure class="card" data-speed="90"><img src="img/portrait.jpg" alt="Portrait of Gusta resting his face in his hand, lit yellow" width="900" height="1124" loading="lazy" decoding="async"></figure>
+  </section>
+
+  <!-- four records, one screen each -->
+  <div id="records">
+
+  <section id="falling-for-you" class="panel pb record" data-name="Falling For You" data-id="falling-for-you" style="--pc:#f08c45;--ink:#070708">
+    <div class="field" aria-hidden="true"></div>
+    <div class="bg" data-speed="-50"><img src="img/close-falling-for-you.jpg" alt="" width="1500" height="1056" loading="lazy" decoding="async"></div>
+    <button type="button" class="card" data-play="falling-for-you" data-speed="70" aria-label="Play Falling For You"><img src="art/falling-for-you.jpg" alt="Cover of Falling For You: orange lettering over a mountain ridge" width="720" height="720" loading="lazy" decoding="async"><span class="card-tag">Play</span></button>
+    <h2 class="h1 title" data-split="lines" aria-label="Falling For You"><span class="line">Falling</span><span class="line">For You</span></h2>
+    <div class="info">
+      <div class="h3 rows">
+        <div class="row"><span>With DOREY</span><span>(&nbsp;&nbsp;&nbsp;2026&nbsp;&nbsp;&nbsp;)</span></div>
+        <div class="row"><span>Another World</span></div>
+        <div class="row"><span>Latest single</span></div>
+      </div>
+      <div class="listen" data-listen="falling-for-you"></div>
+    </div>
+  </section>
+
+  <section id="alive" class="panel pc record" data-name="Alive" data-id="alive" style="--pc:#d9b53a">
+    <div class="bg" data-speed="-70"><img src="img/close-alive.jpg" alt="" width="1500" height="893" loading="lazy" decoding="async"></div>
+    <div class="info">
+      <div class="h3 rows">
+        <div class="row"><span>With HACKETT</span><span>(&nbsp;&nbsp;&nbsp;2026&nbsp;&nbsp;&nbsp;)</span></div>
+        <div class="row"><span>IN / ROTATION</span></div>
+        <div class="row"><span>Insomniac Records</span></div>
+      </div>
+      <div class="listen" data-listen="alive"></div>
+    </div>
+    <button type="button" class="card" data-play="alive" data-speed="60" aria-label="Play Alive"><img src="art/alive.jpg" alt="Cover of Alive: a subway platform blurred in yellow light" width="640" height="640" loading="lazy" decoding="async"><span class="card-tag">Play</span></button>
+    <h2 class="h1 title" data-split="lines" aria-label="Alive"><span class="line">Alive</span></h2>
+  </section>
+
+  <section id="holding-you-back" class="panel pa record" data-name="Holding You Back" data-id="holding-you-back" style="--pc:#9cc4f5">
+    <div class="bg" data-speed="-60"><img src="img/close-holding-you-back.jpg" alt="" width="1500" height="1000" loading="lazy" decoding="async"></div>
+    <h2 class="h1 title under" data-split="lines" aria-label="Holding You Back"><span class="line">Holding</span><span class="line">You Back</span></h2>
+    <div class="info">
+      <div class="h3 rows">
+        <div class="row"><span>With Vivace</span><span>(&nbsp;&nbsp;&nbsp;2026&nbsp;&nbsp;&nbsp;)</span></div>
+        <div class="row"><span>And K.ONE</span></div>
+        <div class="row"><span>Most played</span></div>
+      </div>
+      <div class="listen" data-listen="holding-you-back"></div>
+    </div>
+    <button type="button" class="card" data-play="holding-you-back" data-speed="90" aria-label="Play Holding You Back"><img src="art/holding-you-back.jpg" alt="Cover of Holding You Back: four stippled portraits and blue lettering on white" width="720" height="720" loading="lazy" decoding="async"><span class="card-tag">Play</span></button>
+  </section>
+
+  <section id="i-know-u-hate-me" class="panel pb record" data-name="I Know U Hate Me" data-id="i-know-u-hate-me" style="--pc:#cfa898;--ink:#070708">
+    <div class="field" aria-hidden="true"></div>
+    <div class="bg" data-speed="-50"><img src="img/close-i-know-u-hate-me.jpg" alt="" width="1500" height="1030" loading="lazy" decoding="async"></div>
+    <button type="button" class="card" data-play="i-know-u-hate-me" data-speed="70" aria-label="Play I Know U Hate Me"><img src="art/i-know-u-hate-me.jpg" alt="Cover of I Know U Hate Me: a close-up of an eye with glitter tears" width="720" height="720" loading="lazy" decoding="async"><span class="card-tag">Play</span></button>
+    <h2 class="h1 title" data-split="lines" aria-label="I Know U Hate Me"><span class="line">I Know</span><span class="line">U Hate Me</span></h2>
+    <div class="info">
+      <div class="h3 rows">
+        <div class="row"><span>Solo</span><span>(&nbsp;&nbsp;&nbsp;2026&nbsp;&nbsp;&nbsp;)</span></div>
+        <div class="row"><span>IN / ROTATION</span></div>
+        <div class="row"><span>Insomniac Records</span></div>
+      </div>
+      <div class="listen" data-listen="i-know-u-hate-me"></div>
+    </div>
+  </section>
+
+  <!-- everything he has put out -->
+  <section id="crate" class="crate" data-name="All records">
+    <div class="crate-left">
+      <h2 class="h2 title" data-split="lines" aria-label="Every record"><span class="line">Every</span><span class="line">Record</span></h2>
+      <div class="h3 rows crate-rows">
+        <div class="row"><span>Singles, edits</span><span id="crate-count"></span></div>
+        <div class="row"><span>And the vault</span></div>
+      </div>
+      <div class="crate-list" id="crate-list"></div>
+    </div>
+    <div class="crate-right" id="crate-now">
+      <div class="now-art"><img id="now-art" src="art/falling-for-you.jpg" alt="" width="720" height="720" loading="lazy" decoding="async"></div>
+      <p class="h3 now-title" id="now-title"></p>
+      <p class="now-by" id="now-by"></p>
+      <div class="listen" id="now-listen"></div>
+    </div>
+  </section>
+
+  </div>
+
+  <!-- live -->
+  <section id="live" class="panel pl" data-name="Live">
+    <div class="bg" data-speed="-60"><picture><source srcset="img/booth-m.jpg" media="(max-width: 1024px)"><img src="img/booth.jpg" alt="Gusta from behind at the decks in a dark club, the crowd in front of him" width="1600" height="1200" loading="lazy" decoding="async"></picture></div>
+    <h2 class="h1 title" data-split="lines" aria-label="Behind the decks"><span class="line">Behind</span><span class="line">The Decks</span></h2>
+    <div class="info">
+      <div class="h3 rows">
+        <div class="row"><span>Hard house</span><span>(&nbsp;&nbsp;&nbsp;Live&nbsp;&nbsp;&nbsp;)</span></div>
+        <div class="row"><span>High tempo</span></div>
+        <div class="row"><span>Long sets</span></div>
+      </div>
+      <ul class="sets">
+        <li><span>Elsewhere, Brooklyn</span><span>3.5 hour set</span><span>Aug 2026</span></li>
+        <li><span>Clubhouse FM, Los Angeles</span><span>Radio stream with K.ONE</span><span>Aug 2026</span></li>
+        <li><span>Studio B, Beneath NJ</span><span>Hard house set</span><span>Jul 2026</span></li>
+        <li><span>Casa Groove</span><span>Boat party</span><span>2026</span></li>
+      </ul>
+      <p class="blurb">For dates and bookings, write to management.</p>
+      <div class="links"><a href="#contact" data-contact>Book Gusta</a><a href="https://laylo.com/gusta" target="_blank" rel="noopener">Get the drops on Laylo</a></div>
+    </div>
+    <figure class="card" data-speed="80"><img src="img/fair.jpg" alt="Gusta seen from behind at a fairground at night, a green neon ride and fireworks behind him" width="800" height="964" loading="lazy" decoding="async"></figure>
+  </section>
+
+  <!-- last screen -->
+  <section id="end" class="end" data-name="Contact">
+    <figure class="end-pic" data-speed="50"><img src="img/car.jpg" alt="Gusta in a car window in a patterned balaclava and a fur coat" width="800" height="1000" loading="lazy" decoding="async"></figure>
+    <button type="button" class="h1 end-mail" data-contact data-split="lines" aria-label="Contact management"><span class="line">Get in</span><span class="line">Touch</span></button>
+    <div class="h3 rows end-rows">
+      <div class="row"><span>Management</span><span>(&nbsp;&nbsp;&nbsp;MGMT&nbsp;&nbsp;&nbsp;)</span></div>
+      <div class="row"><span>Bookings</span></div>
+      <div class="row"><span>Collaborations</span></div>
+    </div>
+    <div class="end-links">
+      <a href="https://soundcloud.com/1gusta" target="_blank" rel="noopener">SoundCloud</a>
+      <a href="https://open.spotify.com/artist/1fNsy2CqJXAA2kA0dIPGFS" target="_blank" rel="noopener">Spotify</a>
+      <a href="https://www.instagram.com/_gustaaaaaaaaaaaaaa/" target="_blank" rel="noopener">Instagram</a>
+      <a href="https://www.tiktok.com/@1gustamusic" target="_blank" rel="noopener">TikTok</a>
+      <a href="https://gusta1.bandcamp.com/" target="_blank" rel="noopener">Bandcamp</a>
+      <a href="https://laylo.com/gusta" target="_blank" rel="noopener">Laylo</a>
+    </div>
+    <p class="end-note">Preview build, not yet official. Photos and cover art from Gusta's own pages and releases; club photo with thanks to @j_casino_.</p>
+  </section>
+
+</main>
+
+<!-- player, wide screens -->
+<div class="dock" id="dock" hidden>
+  <img class="dock-art" id="dock-art" src="" alt="" width="40" height="40">
+  <button class="dock-play paused" id="dock-play" type="button" aria-label="Play or pause"><span class="ic-play">Play</span><span class="ic-pause">Pause</span></button>
+  <p class="dock-title" id="dock-title"></p>
+  <div class="dock-bar" id="dock-bar" role="slider" aria-label="Position in the track" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" tabindex="0"><span id="dock-fill"></span></div>
+  <p class="dock-time" id="dock-time"></p>
+  <a class="dock-out" id="dock-out" href="#" target="_blank" rel="noopener">SoundCloud</a>
+  <button class="dock-close" id="dock-close" type="button">Close</button>
+</div>
+
+<script src="js/data.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
